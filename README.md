@@ -1,7 +1,7 @@
 # Blog
 desc the Hbase on the AWS to collect the data
 
-### 6-27 test the Happybase to save data to HBase with Pythin
+### 6-27 test the Happybase to save data to HBase with Python
 ### 6-28 test the AWS EC2 for the Hbase
 1. 测试新加坡的 EMR，开通 3 个 Node 的服务，3 次，速度太慢了。几乎不能忍受。
 1. 第一次开通 Hbase 不成功，提示帐户需要验证
@@ -9,8 +9,8 @@ desc the Hbase on the AWS to collect the data
 
 ### 成本
 	对于AWS 的价格还是不完全了解。
-	如果开通的服务不关闭就会一直收费，但关闭后，可能所有的配置数据就丢失了。
-  而 HBase 需要至少三个节点，费用可能会有点高。
+	如果开通的服务不关闭就会一直收费，但关闭后，可能所有的测试数据就丢失了。但配置可以保存，以再通过 Clone 建立同样的硬件部署。
+  而 HBase 需要至少三个节点，费用可能会有点高。所以先用 Ec2 单机测试。之后转移到集群。
 	
 ## 6-30
   AWS 一直不能测试。
@@ -22,5 +22,12 @@ desc the Hbase on the AWS to collect the data
   1. 需要测试 python 在 AWS 上的环境
   1. 需要测试 Hbase 在 AWS 的表现
   > 需要了解如何通过 Google 一次取到固定数量，并限定搜索的条件，通过程序代码
+
+## 07-01
+1. 通过正则表达式解析网页
+2. 可能还是需要 BeautifulSoup 工具
+3. Urllib 需要用到 Urllib3，以利用其资源池. 正在了解 Google 搜索结果的获取与解析
+4. EC2 Hbase & Pyhton envirement deplopment
+
 
 
