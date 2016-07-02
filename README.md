@@ -38,16 +38,17 @@ Q:
 这个 Link 在 Browser 里是可以工作，但在程序（ex. Python)中发出这个请求到 Google，就只有一些无用的信息。之前有一些工具，例如 Urllib2 可以伪装浏览器，但我的测试结果是，这些功能已经被 Google 封闭。
 
 例如，使用这段代码，可以得到 Header，和 Status 都是正常的情况下，返回的内容与浏览器中搜索的返回内容完全不同：
+```python
+import urllib
 
->import urllib
-
->google = urllib.urlopen('https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=lenovo%20thinkpad')
->print 'http header:\n', google.info()
->print 'http status:', google.getcode()
->print 'url:', google.geturl()
->for line in google: 
->    print line,
->google.close()
+google = urllib.urlopen('https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=lenovo%20thinkpad')
+print 'http header:\n', google.info()
+print 'http status:', google.getcode()
+print 'url:', google.geturl()
+for line in google: 
+    print line,
+google.close()
+```
 我会继续测试这个功能，也请你们的技术员帮助验证。
 
 
