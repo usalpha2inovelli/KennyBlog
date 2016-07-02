@@ -29,5 +29,28 @@ desc the Hbase on the AWS to collect the data
 3. Urllib 需要用到 Urllib3，以利用其资源池. 正在了解 Google 搜索结果的获取与解析
 4. EC2 Hbase & Pyhton envirement deplopment
 
+Q:
+根据我的测试，这些功能在浏览器里是可以的，各种参数也可以指定。但在使用浏览器之外的程序语言发出时，就不工作了。好象是 Google 在收到浏览器的请求后，对 URL 做了一些加密后，再转发到搜索引擎，而通过程序发送的搜索请求是没有这个加密过程支持的，国内的 Baidu 目前也是这种机制。
+原因是 Google 停止了对各种自动搜索工具的 API，以前应该是 Web search API，目前已经被 Customer Search API 所替代，目的就是防止大量的scrapy 程序通过 Google 收集数据。因此把这些服务转变成了收费的服务。
+
+> https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=lenovo%20thinkpad
+
+这个 Link 在 Browser 里是可以工作，但在程序（ex. Python)中发出这个请求到 Google，就只有一些无用的信息。之前有一些工具，例如 Urllib2 可以伪装浏览器，但我的测试结果是，这些功能已经被 Google 封闭。
+
+例如，使用这段代码，可以得到 Header，和 Status 都是正常的情况下，返回的内容与浏览器中搜索的返回内容完全不同：
+import urllib
+
+google = urllib.urlopen('https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=lenovo%20thinkpad')
+print 'http header:\n', google.info()
+print 'http status:', google.getcode()
+print 'url:', google.geturl()
+for line in google: 
+    print line,
+google.close()
+我会继续测试这个功能，也请你们的技术员帮助验证。
+
+
+
+
 
 
