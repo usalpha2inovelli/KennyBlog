@@ -23,9 +23,9 @@ Spark 和 Presto）与其他 AWS 数据存储服务（例如 Amazon S3 和
 密钥对是用来ssh登录远程主机的 ，这个密钥对是按区域创建，并且不能跨区使用的。如果在不同的区建立 EMR，则需要在同一个区建立密钥对。只需要建立一次，可以重复使用。
 
 1.  打开 Amazon EC2 控制台 https://console.aws.amazon.com/ec2/。
-![img](https://github.com/usalpha2inovelli/KennyBlog/pic/aws-01.jpg) 
+![img](./pic/aws-01.jpg) 
 2. 左侧找到密钥对 
-![img](https://github.com/usalpha2inovelli/KennyBlog/pic/aws-02.jpg) 
+![img](https://github.com/usalpha2inovelli/KennyBlog/blob/master/pic/aws-02.jpg) 
 3. 创建密钥对 
 点击创建后会弹出对话框让你保存密钥，保存好，ssh登录的时候会用到 
 
