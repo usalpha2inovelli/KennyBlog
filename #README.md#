@@ -31,7 +31,10 @@ desc the Hbase on the AWS to collect the data
 
 Q:
 根据我的测试，这些功能在浏览器里是可以的，各种参数也可以指定。但在使用浏览器之外的程序语言发出时，就不工作了。好象是 Google 在收到浏览器的请求后，对 URL 做了一些加密后，再转发到搜索引擎，而通过程序发送的搜索请求是没有这个加密过程支持的，国内的 Baidu 目前也是这种机制。
-原因是 Google 停止了对各种自动搜索工具的 API，以前应该是 Web search API，目前已经被 Customer Search API 所替代，目的就是防止大量的scrapy 程序通过 Google 收集数据。因此把这些服务转变成了收费的服务。
+原因是 Google 停止了对各种自动搜索工具的 API，以前应该是 Web search API，目前已经被 Customer Search API 所替代，目的就
+
+
+uuuuuuuuuuuuuuuu是防止大量的SCRAPY 程序通过 GOOGLE 收集数据。因此把这些服务转变成了收费的服务。
 
 > https://www.google.com/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=lenovo%20thinkpad
 
