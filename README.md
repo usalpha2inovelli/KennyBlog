@@ -57,3 +57,14 @@ google.close()
 # 07-03
 测试了 AWS 的 Hadoop 集群功能，在 AWS 上使用集群的方法
 
+# 07-05
+测试了基于种 Google 的搜索方式，目前 Google 在搜索服务上除了 Web 页面外，采用了 Customer Searching Engine 服务，所以如果不能按 Google 最新的方式填写参数，则不能欺骗 Google 服务器通过搜索得到结果。
+今天终于解决了这个困扰多天的问题，并整理了各种可能的 Google Header 中可以包括的 User-agent，但由于收集的内容较多，没能完全测试。
+
+# 2016年7月6日
+
+整理 AWS 中 EMR 使用的文档，参见 [AWS EMR]（https://github.com/usalpha2inovelli/KennyBlog/blob/master/AWS%20EMR%20HBase.md）
+随后整理 Google 搜索的文档。
+
+对 Hbase 数据库的表结构进行初步的设计和测试。
+
