@@ -25,7 +25,7 @@ Spark 和 Presto）与其他 AWS 数据存储服务（例如 Amazon S3 和
 1.  打开 Amazon EC2 控制台 https://console.aws.amazon.com/ec2/。
 ![img](./pic/aws-01.jpg) 
 2. 左侧找到密钥对 
-![img](https://github.com/usalpha2inovelli/KennyBlog/blob/master/pic/aws-02.jpg) 
+![img](./pic/aws-02.jpg) 
 3. 创建密钥对 
 点击创建后会弹出对话框让你保存密钥，保存好，ssh登录的时候会用到 
 
@@ -36,19 +36,19 @@ Spark 和 Presto）与其他 AWS 数据存储服务（例如 Amazon S3 和
 
 1. 通过以下网址打开 Amazon S3 控制台：https://console.aws.amazon.com/s3/。 
 2. 创建存储桶 
-![img](https://github.com/usalpha2inovelli/KennyBlog/pic/aws-03.jpg) 
+![img](./pic/aws-03.jpg) 
 
 
 # 创建EMR,托管Hadoop集群
 
 1. 通过以下网址打开 Amazon EMR 控制台：https://console.aws.amazon.com/elasticmapreduce/。 
-![img](https://github.com/usalpha2inovelli/KennyBlog/pic/aws-04.jpg) 
+![img](./pic/aws-04.jpg) 
 2. 创建集群 
 输入集群名称，设置S3存储路径，即为第二步里创建的S3存储桶，如果没有创建，这里会自动分配一个路径 
     - 选择Hbase 
     - 设置集群数量，默认即可,至少是三个 Nodes
     - 选择密钥对，就是在第一步里创建的密钥对，然后点击创建，则开始启动集群，知道集群状态显示为等待状态时说明启动成功 
-![img](https://github.com/usalpha2inovelli/KennyBlog/pic/aws-05.jpg) 
+![img](./pic/aws-05.jpg) 
 
 
 这样Hadoop集群就创建好了，在集群列表里点击刚才创建好的集群，进行集群详细信息 
