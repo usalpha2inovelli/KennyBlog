@@ -63,8 +63,7 @@ google.close()
 
 # 2016年7月6日
 
-整理 AWS 中 EMR 使用的文档，参见 [AWS EMR]（https://github.com/usalpha2inovelli/KennyBlog/blob/master/AWS%20EMR%20HBase.md）
-随后整理 Google 搜索的文档。
-
-对 Hbase 数据库的表结构进行初步的设计和测试。
+1. 整理 AWS 中 EMR 使用的文档，参见 [AWS EMR](./AWS%20EMR%20HBase.md）
+1. 随后整理 Google 搜索的文档。
+1. 对 Hbase 数据库的表结构进行初步的设计和测试。
 
